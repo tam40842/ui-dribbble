@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+   @apply font-body
+  }
+}
+
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.login-right {
+  background-image: url('../images/bg-right.jpg') ;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: calc(100vh - 4rem); /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Mobile: width < 740px  */
+@media only screen and (max-width: 46.1875em) {
+  .login-right {
+    height: 700px;
+  }
+}
